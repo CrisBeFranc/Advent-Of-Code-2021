@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/AdventOfCode2021/Solution.ConsoleApplication/obj
+/AdventOfCode2021/Solution.ConsoleApplication/bin/Debug/net6.0
+/AdventOfCode2021/.vs
