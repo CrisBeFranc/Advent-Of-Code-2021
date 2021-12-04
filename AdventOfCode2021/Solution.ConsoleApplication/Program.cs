@@ -13,6 +13,10 @@ try
     factory = new DayTwoChallengeFactory("Files/day_two.txt");
     Challenge dayTwo = factory.GetChallenge();
 
+    // Day Three Challenge
+    factory = new DayThreeChallengeFactory("Files/day_three.txt");
+    Challenge dayThree = factory.GetChallenge();
+
     ColumnHeader[] headers = new[]
     {
         new ColumnHeader("Day"),
@@ -25,6 +29,7 @@ try
         
     table.AddRow(dayOne.Day, dayOne.ChallengeName, dayOne.ChallengeOne, dayOne.ChallengeTwo);
     table.AddRow(dayTwo.Day, dayTwo.ChallengeName, dayTwo.ChallengeOne, dayTwo.ChallengeTwo);
+    table.AddRow(dayThree.Day, dayThree.ChallengeName, dayThree.ChallengeOne, dayThree.ChallengeTwo);
 
     table.Config = TableConfiguration.UnicodeAlt();
     Console.Write(table.ToString());
