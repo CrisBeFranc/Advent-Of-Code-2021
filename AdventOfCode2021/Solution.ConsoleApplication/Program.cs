@@ -9,6 +9,10 @@ try
     ChallengeFactory factory = new DayOneChallengeFactory("Files/day_one.txt");
     Challenge dayOne = factory.GetChallenge();
 
+    // Day Two Challenge
+    factory = new DayTwoChallengeFactory("Files/day_two.txt");
+    Challenge dayTwo = factory.GetChallenge();
+
     ColumnHeader[] headers = new[]
     {
         new ColumnHeader("Day"),
@@ -17,8 +21,10 @@ try
         new ColumnHeader("Result Challenge Two")
     };
 
-    Table table = new Table(headers)
-        .AddRow(dayOne.Day, dayOne.ChallengeName, dayOne.ChallengeOne, dayOne.ChallengeTwo);
+    Table table = new Table(headers);
+        
+    table.AddRow(dayOne.Day, dayOne.ChallengeName, dayOne.ChallengeOne, dayOne.ChallengeTwo);
+    table.AddRow(dayTwo.Day, dayTwo.ChallengeName, dayTwo.ChallengeOne, dayTwo.ChallengeTwo);
 
     table.Config = TableConfiguration.UnicodeAlt();
     Console.Write(table.ToString());
