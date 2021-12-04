@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{90BBCD1C-D7E9-43AC-A77F-F1CA70258010}"
 	ProjectSection(SolutionItems) = preProject
 		Files\day_one.txt = Files\day_one.txt
+		Files\day_three.txt = Files\day_three.txt
 		Files\day_two.txt = Files\day_two.txt
 	EndProjectSection
 EndProject
