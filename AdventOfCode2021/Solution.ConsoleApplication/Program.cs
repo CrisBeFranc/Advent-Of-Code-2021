@@ -21,6 +21,10 @@ try
     factory = new DayFourChallengeFactory("Files/day_four.txt");
     Challenge dayFour = factory.GetChallenge();
 
+    // Day Five Challenge
+    factory = new DayFiveChallengeFactory("Files/day_five.txt");
+    Challenge dayFive = factory.GetChallenge();
+
     ColumnHeader[] headers = new[]
     {
         new ColumnHeader("Day"),
@@ -35,6 +39,7 @@ try
     table.AddRow(dayTwo.Day, dayTwo.ChallengeName, dayTwo.ChallengeOne, dayTwo.ChallengeTwo);
     table.AddRow(dayThree.Day, dayThree.ChallengeName, dayThree.ChallengeOne, dayThree.ChallengeTwo);
     table.AddRow(dayFour.Day, dayFour.ChallengeName, dayFour.ChallengeOne, dayFour.ChallengeTwo);
+    table.AddRow(dayFive.Day, dayFive.ChallengeName, dayFive.ChallengeOne, dayFive.ChallengeTwo);
 
     table.Config = TableConfiguration.UnicodeAlt();
     Console.Write(table.ToString());
